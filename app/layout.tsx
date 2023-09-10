@@ -17,7 +17,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <nav className="flex justify-between w-full bg-zinc-800 p-8">
+          <h1 className="text-md font-light [text-shadow:0_2px_2px_rgb] text-left">
+            Calculadora <br />| <span className="font-bold">Sueldo Neto</span>
+          </h1>
+          <h1 className="text-3xl">🌶️</h1>
+        </nav>
+        {children}
+      </body>
     </html>
   );
 }
